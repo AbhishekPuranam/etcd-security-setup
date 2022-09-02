@@ -21,7 +21,7 @@ etcd \
     --peer-key-file=tls/assets/member-1-peer-key.pem \
     --client-cert-auth=true \
     --trusted-ca-file=tls/assets/ca.pem \
-    --peer-cert-allowed-cn=etcd-member \
+    #--peer-cert-allowed-cn=etcd-member \
     --peer-client-cert-auth=true \
     --peer-trusted-ca-file=tls/assets/ca.pem \
     --log-output=stderr > logs/etcd1.stdout 2> logs/etcd1.stderr &
@@ -43,7 +43,7 @@ etcd \
     --peer-key-file=tls/assets/member-2-peer-key.pem \
     --client-cert-auth=true \
     --trusted-ca-file=tls/assets/ca.pem \
-    --peer-cert-allowed-cn=etcd-member \
+    #--peer-cert-allowed-cn=etcd-member \
     --peer-client-cert-auth=true \
     --peer-trusted-ca-file=tls/assets/ca.pem \
     --log-output stderr > logs/etcd2.stdout 2> logs/etcd2.stderr &
@@ -65,7 +65,7 @@ etcd \
     --peer-key-file=tls/assets/member-3-peer-key.pem \
     --client-cert-auth=true \
     --trusted-ca-file=tls/assets/ca.pem \
-    --peer-cert-allowed-cn=etcd-member \
+    #--peer-cert-allowed-cn=etcd-member \
     --peer-client-cert-auth=true \
     --peer-trusted-ca-file=tls/assets/ca.pem \
     --log-output stderr > logs/etcd3.stdout 2> logs/etcd3.stderr &
